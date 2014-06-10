@@ -11,7 +11,7 @@ class Stack
   end
   
   def push
-    print"Enter one: "
+    print"Masukkan data: "
     @data[@top+1]=gets
       @top=@top+1
   end
@@ -19,7 +19,7 @@ class Stack
   def pop
     @data[@top]=nil
       @top=@top-1
-      puts"Data upper has been deleted"
+      puts"Data teratas dihapus"
   end
 
   
@@ -37,7 +37,7 @@ while pilih!=4
 puts "1.PUSH"
 puts "2.POP"
 puts "3.VIEW"
-print"Please choice : "
+print"Pilih salah satu : "
 pilih=gets.to_i
 case pilih
 when 1
